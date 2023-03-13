@@ -149,6 +149,18 @@ function createTrackballControls() {
   trackballControls.keys = ['KeyA', 'KeyS', 'KeyD'];
 }
 
+window.addEventListener('resize', onResize, false)
+
+function onResize() {
+  console.log(`onResize`)
+  width = container.clientWidth;
+  height = container.clientHeight;
+  console.log({width, height})
+  camera.aspect = width / height; // aspect 长宽比
+  camera.updateProjectionMatrix();
+  renderer.setSize(width, height)
+}
+
 onMounted(() => {
   guiInit()
   init()
