@@ -13,6 +13,18 @@ export var demoChildren = [
         meta: { title: "Line Basic" },
         component: function () { return import('../views/demo/LineBasic.vue'); },
     },
+    {
+        path: 'Text',
+        name: 'Text',
+        meta: { title: "Text Basic" },
+        component: function () { return import('../views/demo/TextBasic.vue'); },
+    },
+    {
+        path: 'ThreeFree',
+        name: 'ThreeFree',
+        meta: { title: "ThreeFree" },
+        component: function () { return import('../views/demo/ThreeFree.vue'); },
+    },
 ];
 var router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

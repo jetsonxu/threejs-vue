@@ -14,6 +14,18 @@ export let demoChildren = [
         meta: {title: "Line Basic"},
         component: () => import('../views/demo/LineBasic.vue'),
     },
+    {
+        path: 'Text',
+        name: 'Text',
+        meta: {title: "Text Basic"},
+        component: () => import('../views/demo/TextBasic.vue'),
+    },
+    {
+        path: 'ThreeFree',
+        name: 'ThreeFree',
+        meta: {title: "ThreeFree"},
+        component: () => import('../views/demo/ThreeFree.vue'),
+    },
 ]
 
 const router = createRouter({
