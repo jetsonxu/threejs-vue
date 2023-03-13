@@ -27,10 +27,10 @@ export let demoChildren = [
         component: () => import('../views/demo/ThreeFree.vue'),
     },
     {
-        path: 'Level1',
-        name: 'Level1',
-        meta: {title: "Level1"},
-        component: () => import('../views/demo/Level1.vue'),
+        path: 'LightBasic',
+        name: 'LightBasic',
+        meta: {title: "Light Basic"},
+        component: () => import('../views/demo/LightBasic.vue'),
     },
 ]
 

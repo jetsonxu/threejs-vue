@@ -6,13 +6,14 @@
 import * as THREE from 'three';
 import {GUI} from 'three/examples/jsm/libs/lil-gui.module.min.js';
 
-import {onMounted} from "vue";
+import {onMounted, onUnmounted} from "vue";
 
 let container: HTMLElement
 let width, height
 let camera, cameraTarget, scene, renderer
 let materials, group
 THREE.Cache.enabled = true;
+let gui
 onMounted(() => {
   container = document.querySelector(".container");
   width = container.clientWidth
@@ -69,7 +70,7 @@ onMounted(() => {
   renderer.clear();
   renderer.render(scene, camera);
 
-  const gui = new GUI();
+  gui = new GUI();
   const params = {
     changeColor: function () {
 
@@ -114,6 +115,10 @@ onMounted(() => {
   gui.add(params, 'changeBevel').name('change bevel');
   gui.open();
 
+})
+
+onUnmounted(() => {
+  gui.destroy()
 })
 </script>
 
