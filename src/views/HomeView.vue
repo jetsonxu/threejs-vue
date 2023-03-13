@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import ThreeBasic from "@/components/three/ThreeBasic.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <ThreeBasic/>
 </template>
