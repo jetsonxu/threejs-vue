@@ -32,6 +32,12 @@ export let demoChildren = [
         meta: {title: "Light Basic"},
         component: () => import('../views/demo/LightBasic.vue'),
     },
+    {
+        path: 'BaseComp',
+        name: 'BaseComp',
+        meta: {title: "BaseComp"},
+        component: () => import('../views/demo/BaseComp.vue'),
+    },
 ]
 
 const router = createRouter({

@@ -31,6 +31,12 @@ export var demoChildren = [
         meta: { title: "Light Basic" },
         component: function () { return import('../views/demo/LightBasic.vue'); },
     },
+    {
+        path: 'BaseComp',
+        name: 'BaseComp',
+        meta: { title: "BaseComp" },
+        component: function () { return import('../views/demo/BaseComp.vue'); },
+    },
 ];
 var router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

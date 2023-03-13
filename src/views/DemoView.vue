@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import {demoChildren} from "@/router";
 
-let menuList = demoChildren
+let menuList = demoChildren.reverse()
 </script>
 
 <style scoped lang="scss">
