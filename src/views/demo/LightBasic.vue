@@ -188,7 +188,7 @@ console.log("Using Three.js version:", THREE.REVISION)
 
 .description {
   position: fixed;
-  left: 200;
+  left: 200px;
   top: 0;
   height: 100px;
   width: 300px;
