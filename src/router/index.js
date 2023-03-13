@@ -25,6 +25,12 @@ export var demoChildren = [
         meta: { title: "ThreeFree" },
         component: function () { return import('../views/demo/ThreeFree.vue'); },
     },
+    {
+        path: 'Level1',
+        name: 'Level1',
+        meta: { title: "Level1" },
+        component: function () { return import('../views/demo/Level1.vue'); },
+    },
 ];
 var router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
