@@ -9,10 +9,13 @@ import {onMounted} from "vue";
 
 onMounted(() => {
   let dom = document.querySelector("#basic-render")
+
+  console.log(dom?.clientWidth);
+  console.log(dom?.clientHeight);
   const scene = new Scene();
-  const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+  const camera = new PerspectiveCamera(75, dom?.clientWidth / dom?.clientHeight, 0.1, 1000)
   const renderer = new WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(dom?.clientWidth, dom?.clientHeight);
   dom.appendChild(renderer.domElement);
 
   const geometry = new BoxGeometry(1, 1, 1);
@@ -37,6 +40,5 @@ onMounted(() => {
 #basic-render {
   width: 100%;
   height: 100%;
-  background: #ccc;
 }
 </style>

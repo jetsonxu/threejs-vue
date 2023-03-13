@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import ThreeBasic from "@/components/three/ThreeBasic.vue";
+
 </script>
 
 <template>
-  <ThreeBasic/>
+  <div>
+    <router-link to="demo">Demo</router-link>
+  </div>
+
 </template>
